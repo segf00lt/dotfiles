@@ -1,0 +1,5 @@
+2021/01/31-22:36:13.940 5773 Reusing MANIFEST /home/joao/.local/share/qutebrowser/webengine/IndexedDB/https_googleads.g.doubleclick.net_0.indexeddb.leveldb/MANIFEST-000001
+2021/01/31-22:36:21.668 5755 Level-0 table #5: started
+2021/01/31-22:36:21.677 5755 Level-0 table #5: 364 bytes OK
+2021/01/31-22:36:21.682 5755 Delete type=0 #3
+2021/01/31-22:36:21.682 5755 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

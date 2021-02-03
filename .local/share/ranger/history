@@ -1,0 +1,30 @@
+search lik
+search .dwm
+search mixer
+search sound
+search .confi
+find 
+shell mv %f .local/bin
+mv %f .local/bin
+help
+shell mv %s .local/bin
+search .Xres
+shell mv %f /home/joao/dwm
+shell mkdir scripts
+shell mv %%f scripts
+shell mv %f scripts
+shell %f mv scripts
+shell %%f mv scripts
+shell %%f mv autostart.sh scripts
+shell %f mv autostart.sh scripts
+shell mv %f autostart.sh scripts
+
+shell mv %f ~/.local/bin
+search loca
+open_with 
+shell mv %%%%f dwmblocks
+shell mv %f dwmblocks
+shell mv %f ~
+search .loc
+search rc
+delete

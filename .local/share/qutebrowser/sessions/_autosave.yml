@@ -1,0 +1,108 @@
+windows:
+- active: true
+  geometry: !!binary |
+    AdnQywADAAAAAAAHAAAAHgAABBsAAAQwAAAACgAAACEAAAQYAAAELQAAAAAAAAAAB4AAAAAKAAAA
+    IQAABBgAAAQt
+  tabs:
+  - history:
+    - last_visited: '2021-02-03T19:04:49'
+      pinned: false
+      title: DuckDuckGo — Privacy, simplified.
+      url: https://start.duckduckgo.com/
+    - last_visited: '2021-02-03T19:04:59'
+      pinned: false
+      title: github at DuckDuckGo
+      url: https://duckduckgo.com/?q=github&ia=web&iai=r1-0&page=1&sexp=%7B%22cdrexp%22%3A%22b%22%2C%22artexp%22%3A%22c%22%2C%22prodexp%22%3A%22b%22%2C%22prdsdexp%22%3A%22c%22%2C%22biaexp%22%3A%22b%22%2C%22msvrtexp%22%3A%22b%22%2C%22videxp%22%3A%22a%22%7D
+    - last_visited: '2021-02-03T19:05:00'
+      original-url: https://duckduckgo.com/?q=github&ia=web&iai=r1-0&page=1&sexp=%7B%22cdrexp%22%3A%22b%22%2C%22artexp%22%3A%22c%22%2C%22prodexp%22%3A%22b%22%2C%22prdsdexp%22%3A%22c%22%2C%22biaexp%22%3A%22b%22%2C%22msvrtexp%22%3A%22b%22%2C%22videxp%22%3A%22a%22%7D
+      pinned: false
+      title: 'GitHub: Where the world builds software · GitHub'
+      url: https://github.com/
+    - last_visited: '2021-02-03T19:05:07'
+      pinned: false
+      title: Sign in to GitHub · GitHub
+      url: https://github.com/login
+    - last_visited: '2021-02-03T19:05:29'
+      pinned: false
+      title: Sign in to GitHub · GitHub
+      url: https://github.com/session
+    - last_visited: '2021-02-03T19:05:42'
+      original-url: https://github.com/session
+      pinned: false
+      title: GitHub
+      url: https://github.com/
+    - last_visited: '2021-02-03T19:05:51'
+      pinned: false
+      title: 'mrSpooder/dwm: My dwm config'
+      url: https://github.com/mrSpooder/dwm
+    - last_visited: '2021-02-03T19:08:21'
+      pinned: false
+      title: Your Repositories
+      url: https://github.com/mrSpooder?tab=repositories
+    - last_visited: '2021-02-03T19:08:28'
+      pinned: false
+      title: Create a New Repository
+      url: https://github.com/new
+    - last_visited: '2021-02-03T19:20:55'
+      pinned: false
+      title: 'mrSpooder/dwmblocks: My fork of dwmblocks'
+      url: https://github.com/mrSpooder/dwmblocks
+    - last_visited: '2021-02-03T19:20:55'
+      pinned: false
+      title: dwmblocks/blocks.def.h at main · mrSpooder/dwmblocks
+      url: https://github.com/mrSpooder/dwmblocks/blob/main/blocks.def.h
+    - last_visited: '2021-02-03T19:22:02'
+      pinned: false
+      title: 'mrSpooder/dwmblocks: My fork of dwmblocks'
+      url: https://github.com/mrSpooder/dwmblocks
+    - last_visited: '2021-02-03T19:24:10'
+      pinned: false
+      title: Your Repositories
+      url: https://github.com/mrSpooder?tab=repositories
+    - last_visited: '2021-02-03T19:38:48'
+      pinned: false
+      title: 'mrSpooder/dwm: My dwm config'
+      url: https://github.com/mrSpooder/dwm
+    - last_visited: '2021-02-03T19:38:49'
+      pinned: false
+      title: dwm/scripts at main · mrSpooder/dwm
+      url: https://github.com/mrSpooder/dwm/tree/main/scripts
+    - last_visited: '2021-02-03T19:38:50'
+      pinned: false
+      title: dwm/autostart.sh at main · mrSpooder/dwm
+      url: https://github.com/mrSpooder/dwm/blob/main/scripts/autostart.sh
+    - last_visited: '2021-02-03T20:27:41'
+      pinned: false
+      title: Your Repositories
+      url: https://github.com/mrSpooder?tab=repositories
+    - last_visited: '2021-02-03T20:40:13'
+      pinned: false
+      title: Create a New Repository
+      url: https://github.com/new
+    - active: true
+      last_visited: '2021-02-03T20:40:23'
+      original-url: https://github.com/repositories
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: mrSpooder/dotfiles
+      url: https://github.com/mrSpooder/dotfiles
+      zoom: 1.0
+  - active: true
+    history:
+    - last_visited: '2021-02-03T20:39:30'
+      pinned: false
+      title: manage dotfiles with bare git repo at DuckDuckGo
+      url: https://duckduckgo.com/?q=manage+dotfiles+with+bare+git+repo&ia=web&iai=r1-2&page=1&sexp=%7B%22cdrexp%22%3A%22b%22%2C%22artexp%22%3A%22a%22%2C%22prodexp%22%3A%22b%22%2C%22prdsdexp%22%3A%22c%22%2C%22biaexp%22%3A%22b%22%2C%22msvrtexp%22%3A%22b%22%7D
+    - active: true
+      last_visited: '2021-02-03T20:41:58'
+      original-url: https://duckduckgo.com/?q=manage+dotfiles+with+bare+git+repo&ia=web&iai=r1-2&page=1&sexp=%7B%22cdrexp%22%3A%22b%22%2C%22artexp%22%3A%22a%22%2C%22prodexp%22%3A%22b%22%2C%22prdsdexp%22%3A%22c%22%2C%22biaexp%22%3A%22b%22%2C%22msvrtexp%22%3A%22b%22%7D
+      pinned: false
+      scroll-pos:
+        x: 0
+        y: 0
+      title: 'The best way to store your dotfiles: A bare Git repository **EXPLAINED**
+        // Ackama'
+      url: https://www.ackama.com/blog/posts/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained
+      zoom: 1.0

@@ -1,0 +1,6 @@
+2021/02/03-19:04:49.470 20aed Reusing MANIFEST /home/joao/.local/share/qutebrowser/webengine/Local Storage/leveldb/MANIFEST-000001
+2021/02/03-19:04:49.470 20aed Recovering log #39
+2021/02/03-19:04:49.470 20aed Reusing old log /home/joao/.local/share/qutebrowser/webengine/Local Storage/leveldb/000039.log 
+2021/02/03-19:29:30.121 21485 Level-0 table #43: started
+2021/02/03-19:29:30.165 21485 Level-0 table #43: 15075 bytes OK
+2021/02/03-19:29:30.177 21485 Delete type=0 #39

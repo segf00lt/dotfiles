@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/joao/Downloads/dwm-r1522-viewontag.diff" added="2020-12-11T17:06:10.981662Z" modified="2020-12-11T17:06:11.474958Z" visited="2020-12-11T17:06:10.981665Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-patch"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-12-11T17:06:11.474953Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/joao/Downloads/Fira_Code_v5.2.zip" added="2020-12-16T15:57:08.887190Z" modified="2020-12-16T15:57:08.887195Z" visited="2020-12-16T15:57:08.887190Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-12-16T15:57:08.887191Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/joao/Downloads/wp1933952-pixel-art-wallpapers.jpg" added="2020-12-17T15:57:20.873999Z" modified="2020-12-17T15:57:20.874003Z" visited="2020-12-17T15:57:20.874000Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-12-17T15:57:20.874001Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/joao/Downloads/20_Hyper-Light-Drifter.jpg" added="2020-12-17T16:01:08.839234Z" modified="2020-12-17T16:01:09.151441Z" visited="2020-12-17T16:01:08.839236Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2020-12-17T16:01:09.151438Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/joao/dwm/dwm-6.2/dwm-focusonclick-20171030-6aa8e37.diff" added="2021-01-07T20:46:16.937691Z" modified="2021-01-07T20:46:17.259484Z" visited="2021-01-07T20:46:16.937693Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-patch"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-07T20:46:17.259482Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/joao/dwm/dwm-6.2/dwm-movestack-6.1.diff" added="2021-01-07T20:47:23.714576Z" modified="2021-01-07T20:47:24.066615Z" visited="2021-01-07T20:47:23.714579Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-patch"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-07T20:47:24.066610Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/joao/dwm/dwm-6.2/dwm-xresources-6.2.diff" added="2021-01-07T21:07:47.019790Z" modified="2021-01-07T21:07:47.370040Z" visited="2021-01-07T21:07:47.019793Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-patch"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-07T21:07:47.370037Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/joao/dwm/dwm-6.2/dwm-xrdb-6.2.diff" added="2021-01-07T22:30:40.181076Z" modified="2021-01-09T15:59:55.417835Z" visited="2021-01-07T22:30:40.181079Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-patch"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-09T15:59:55.417832Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/joao/dwm/dwm-6.2/dwm-sticky-20160911-ab9571b.diff" added="2021-01-07T23:10:47.650677Z" modified="2021-01-07T23:10:47.959927Z" visited="2021-01-07T23:10:47.650681Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-patch"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-07T23:10:47.959924Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/joao/dwm/dwm-6.2/dwm-actualfullscreen-20191112-cb3f58a.diff" added="2021-01-07T23:35:11.384506Z" modified="2021-01-07T23:35:11.788436Z" visited="2021-01-07T23:35:11.384510Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-patch"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-07T23:35:11.788433Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/joao/dwm/dwm-6.2/dwm-awesomebar-20200907-6.2.diff" added="2021-01-07T23:40:41.627439Z" modified="2021-01-09T16:29:08.356139Z" visited="2021-01-07T23:40:41.627443Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-patch"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-09T16:29:08.356136Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/joao/dwm/dwm-6.2/dwm-shiftviewclients-6.2.diff" added="2021-01-08T00:43:23.740602Z" modified="2021-01-09T16:21:00.379807Z" visited="2021-01-08T00:43:23.740604Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-patch"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-09T16:21:00.379801Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/joao/dwm/dwm-6.2/dwm-fancybar-20200423-ed3ab6b.diff" added="2021-01-09T17:14:03.160224Z" modified="2021-01-09T17:14:03.541917Z" visited="2021-01-09T17:14:03.160227Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-patch"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-09T17:14:03.541913Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/joao/dwm/dwm-6.2/dwm-hide_vacant_tags-6.2.diff" added="2021-01-09T17:21:34.842445Z" modified="2021-01-09T17:21:35.159374Z" visited="2021-01-09T17:21:34.842448Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/x-patch"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-09T17:21:35.159372Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/mozilla_joao0/kasugano.txt" added="2021-01-09T19:57:01.705123Z" modified="2021-01-09T19:57:01.705141Z" visited="2021-01-09T19:57:01.705124Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-09T19:57:01.705138Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/joao/Downloads/kasugano.txt" added="2021-01-09T19:58:59.818971Z" modified="2021-01-09T19:58:59.818975Z" visited="2021-01-09T19:58:59.818971Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2021-01-09T19:58:59.818972Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

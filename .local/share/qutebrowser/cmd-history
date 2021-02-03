@@ -1,0 +1,100 @@
+:open -t https://raw.githubusercontent.com/qutebrowser/qutebrowser/master/doc/img/cheatsheet-big.png
+:open -t http://dwm.suckless.org/patches/historical/
+/focusa
+/focusadjacenttag
+/shiftview
+:download
+:download-clear
+:adblock-update
+/deck
+:download
+:dow
+:download
+:download-clear
+/vani
+:download
+/fullg
+:download
+:download-clear 
+/hide
+:download
+:open -t qute://history/
+:download-clear
+:open -t https://www.youtube.com/
+:download
+:download-clear
+:open -t http://dwm.suckless.org/patches/fancybar/dwm-fancybar-20200423-ed3ab6b.diff
+:download
+:download-clear
+:open -t https://www.youtube.com/
+:download
+:open -t https://duckduckgo.com/?q=dwm+autostart
+:history
+/giti
+:open https://www.youtube.com/c/DistroTube/search?query=qutebrowser
+:open -t suckless.org
+:open -t https://tools.suckless.org/dmenu/patches/highpriority/
+:download
+:download-clear
+:open -t github.com
+:open -t https://github.com/drkhsh/slstatus
+:open -t nnn
+:open -t https://github.com/bakkeby/patches/wiki/barmodules
+:open -t https://www.youtube.com/
+:open https://dwm.suckless.org/patches/awesomebar/
+:download
+/fanc
+:download
+:restart
+:open -t https://dwm.suckless.org/patches/
+/attach
+/attachto
+:download
+:download-clear
+:open -t https://dwm.suckless.org/patches/awesomebar/
+:download
+:history
+:dow
+:download
+/focuso
+:download
+:download-clear
+:download
+/movest
+:download
+:open https://www.youtube.com/
+:download-clear
+:download
+/pert
+:download
+:download-clear
+/xrdb
+:download
+/actual
+:download
+/attacht
+:download
+/vani
+:download-clear
+:download
+:open -t sed tutorial
+:open -t select characters sed
+:history
+:open -t bash unary operator expected
+:open https://www.youtube.com/
+:open -t echo standard input
+:history
+:open -t fields cut command
+:open -t setting enviromental variabled
+:history
+:open https://www.youtube.com/
+:restart
+:open -t spawn mpv qutebrowser
+/mpv
+:restart
+:history
+:adblock-update
+:restart
+:open https://www.youtube.com/results?search_query=luke+smith+shell+scripting
+:open https://www.youtube.com/c/DistroTube/search?query=qutebrowser
+:open -t manage dotfiles with bare git repo

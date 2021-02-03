@@ -1,0 +1,12 @@
+[general]
+qt_version = 5.15.2
+version = 2.0.1
+serviceworker_workaround = 514
+session-warning-shown = 1
+quickstart-done = 1
+
+[geometry]
+mainwindow = AdnQywADAAAAAAAEAAAAGwAABHcAAAQtAAAABwAAAB4AAAR0AAAEKgAAAAAAAAAAB4AAAAAHAAAAHgAABHQAAAQq
+
+[inspector]
+

@@ -1,0 +1,9 @@
+#! /bin/sh
+                                                          
+stat=`amixer get Master | tail -n 1 | cut -d ' ' -f 9 | tr -d []`
+vol=`amixer get Master | tail -n 1 | cut -d ' ' -f 7 | tr -d []`
+
+case $stat in
+	"on") echo $vol ;;
+	"off") echo $stat ;;
+esac

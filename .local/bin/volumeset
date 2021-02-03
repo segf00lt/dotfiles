@@ -1,0 +1,10 @@
+#! /bin/sh
+
+case $1 in
+	"more")	amixer sset Master 5%+ ;;
+	"less") amixer sset Master 5%- ;;
+	"max")  amixer sset Master 100% ;;
+	"tog")  amixer sset Master toggle ;;
+esac
+
+pkill -RTMIN+15 dwmblocks

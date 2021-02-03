@@ -1,0 +1,10 @@
+#! /bin/sh
+
+map=`setxkbmap -query | grep 'layout' | tr -s ' ' | cut -d ' ' -f 2`
+
+case $map in
+	"us")	setxkbmap br ;;
+	"br")	setxkbmap us ;;
+esac
+
+pkill -RTMIN+10 dwmblocks
