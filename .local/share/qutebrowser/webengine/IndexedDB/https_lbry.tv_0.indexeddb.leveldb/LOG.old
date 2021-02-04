@@ -1,5 +1,0 @@
-2021/01/31-22:32:54.248 5719 Reusing MANIFEST /home/joao/.local/share/qutebrowser/webengine/IndexedDB/https_lbry.tv_0.indexeddb.leveldb/MANIFEST-000001
-2021/01/31-22:33:25.897 5755 Level-0 table #5: started
-2021/01/31-22:33:25.900 5755 Level-0 table #5: 9941 bytes OK
-2021/01/31-22:33:25.904 5755 Delete type=0 #3
-2021/01/31-22:33:25.905 5755 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

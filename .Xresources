@@ -42,3 +42,6 @@
 dwm.selbordercolor: #52ad91
 dwm.selbgcolor: #7882bf
 
+!! dmenu Appearance
+
+dmenu.selbackground: #52ad91
