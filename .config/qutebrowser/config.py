@@ -31,7 +31,13 @@ config.load_autoconfig(False)
 config.set('content.cookies.accept', 'all', 'chrome-devtools://*')
 
 # Set dark mode
+config.set("colors.webpage.prefers_color_scheme_dark", True)
 config.set("colors.webpage.darkmode.enabled", True)
+config.set("colors.webpage.darkmode.algorithm", "brightness-rgb")
+config.set("colors.webpage.darkmode.contrast", 0.2)
+config.set("colors.webpage.darkmode.threshold.text", 120)
+config.set("colors.webpage.darkmode.threshold.background", 205)
+config.set("colors.webpage.darkmode.policy.images", "smart")
 
 # Bindings for normal mode
 config.bind('V', 'hint links spawn --detach mpv --force-window=immediate {hint-url}')

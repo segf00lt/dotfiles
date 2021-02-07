@@ -52,16 +52,23 @@ fi
 setxkbmap us &
 
 #VirtualBox VMSVGA
-VBoxClient --vmsvga
+#VBoxClient --vmsvga
 
 #Display Res
-xrandr --output Virtual-1 --mode 1360x768 &
+#xrandr --output Virtual-1 --mode 1360x768 &
 
 #Compositor
-picom -f &
+picom &
 
 #Wallpaper
-nitrogen --restore &
+#nitrogen --restore &
+/home/joao/.fehbg &
+
+# Color Scheme
+wal -R &
+
+#Redshift
+redshift &
 
 #Loop
 while true; do
@@ -71,5 +78,3 @@ done
 #Execute DWM
 exec dwm
 
-#Run slstatus
-exec slstatus &

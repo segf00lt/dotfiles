@@ -15,3 +15,7 @@ alias cl='clear'
 
 export PATH="/home/joao/.local/bin:$PATH"
 alias config='/usr/bin/git --git-dir=/home/joao/dotfiles --work-tree=/home/joao'
+
+alias fetch="neofetch"
+
+export EDITOR="vim"

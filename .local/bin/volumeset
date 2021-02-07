@@ -1,10 +1,10 @@
 #! /bin/sh
 
 case $1 in
-	"more")	amixer sset Master 5%+ ;;
-	"less") amixer sset Master 5%- ;;
-	"max")  amixer sset Master 100% ;;
-	"tog")  amixer sset Master toggle ;;
+	"more")	pamixer --increase 5 ;;
+	"less") pamixer --decrease 5 ;;
+	"max")  pamixer --set-volume 100 ;;
+	"tog")  pamixer --toggle-mute ;;
 esac
 
 pkill -RTMIN+15 dwmblocks
