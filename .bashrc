@@ -1,4 +1,3 @@
-#
 # ~/.bashrc
 #
 
@@ -10,12 +9,11 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
-alias str='startx' 
 alias cl='clear'
 
 export PATH="/home/joao/.local/bin:$PATH"
 alias config='/usr/bin/git --git-dir=/home/joao/dotfiles --work-tree=/home/joao'
-
+alias shutdown="shutdown now"
 alias fetch="neofetch"
-
-export EDITOR="vim"
+export EDITOR="nvim"
+export VISUAL="nvim"
