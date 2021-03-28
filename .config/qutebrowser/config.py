@@ -31,7 +31,7 @@ config.load_autoconfig(False)
 config.set('content.cookies.accept', 'all', 'chrome-devtools://*')
 
 # Set dark mode
-config.set("colors.webpage.prefers_color_scheme_dark", True)
+config.set("colors.webpage.preferred_color_scheme", "dark")
 config.set("colors.webpage.darkmode.enabled", True)
 config.set("colors.webpage.darkmode.algorithm", "brightness-rgb")
 config.set("colors.webpage.darkmode.contrast", 0.2)
@@ -154,3 +154,17 @@ config.set('content.javascript.enabled', True, 'chrome://*/*')
 # Enable JavaScript.
 # Type: Bool
 config.set('content.javascript.enabled', True, 'qute://*/*')
+
+# Enable video and audio
+# Type: BoolAsk
+config.set('content.media.audio_video_capture', True, 'https://meet.google.com/*')
+config.set('content.media.audio_capture', True, 'https://meet.google.com/*')
+config.set('content.media.video_capture', True, 'https://meet.google.com/*')
+
+# Enable desktop sharing
+# Type: BoolAsk
+config.set('content.desktop_capture', True, 'https://meet.google.com/*')
+
+# Disable Notifications
+# Type: BoolAsk
+config.set('content.notifications', False)
