@@ -35,8 +35,8 @@ config.set("colors.webpage.preferred_color_scheme", "dark")
 config.set("colors.webpage.darkmode.enabled", True)
 config.set("colors.webpage.darkmode.algorithm", "brightness-rgb")
 config.set("colors.webpage.darkmode.contrast", 0.2)
-config.set("colors.webpage.darkmode.threshold.text", 120)
-config.set("colors.webpage.darkmode.threshold.background", 205)
+config.set("colors.webpage.darkmode.threshold.text", 110)
+config.set("colors.webpage.darkmode.threshold.background", 215)
 config.set("colors.webpage.darkmode.policy.images", "smart")
 
 # Bindings for normal mode
@@ -155,16 +155,29 @@ config.set('content.javascript.enabled', True, 'chrome://*/*')
 # Type: Bool
 config.set('content.javascript.enabled', True, 'qute://*/*')
 
+# Allow cookies for certain websites
+# Type: String
+config.set('content.cookies.accept', 'all', 'https://duckduckgo.com/*')
+config.set('content.cookies.accept', 'all', 'https://github.com/*')
+config.set('content.cookies.accept', 'all', 'https://drive.google.com/*')
+
+# Block cookies
+# Type: String
+#config.set('content.cookies.accept', 'never')
+
 # Enable video and audio
 # Type: BoolAsk
 config.set('content.media.audio_video_capture', True, 'https://meet.google.com/*')
 config.set('content.media.audio_capture', True, 'https://meet.google.com/*')
 config.set('content.media.video_capture', True, 'https://meet.google.com/*')
+config.set('content.media.audio_capture', True, 'https://discord.com/*')
+config.set('content.media.video_capture', True, 'https://discord.com/*')
 
 # Enable desktop sharing
 # Type: BoolAsk
 config.set('content.desktop_capture', True, 'https://meet.google.com/*')
+config.set('content.desktop_capture', True, 'https://discord.com/*')
 
 # Disable Notifications
 # Type: BoolAsk
-config.set('content.notifications', False)
+config.set('content.notifications.enabled', False)
