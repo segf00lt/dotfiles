@@ -1,0 +1,5 @@
+#! /bin/sh
+
+for i in $(ls -d */ | grep -oP "[A-Z]+[0-9]+"); do
+	mv $i/README.md $i/README
+done

@@ -1,8 +1,8 @@
 #
-# ~/.bash_profile
+# ~/.profile
 #
 
-[[ -f ~/.bashrc ]] && . ~/.bashrc
+[[ -f ~/.zshrc ]] && . ~/.zshrc
 
 if [[ "$(tty)" = "/dev/tty1" ]]; then
 	pgrep dwm || startx

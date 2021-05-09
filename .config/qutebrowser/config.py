@@ -40,7 +40,7 @@ config.set("colors.webpage.darkmode.threshold.background", 215)
 config.set("colors.webpage.darkmode.policy.images", "smart")
 
 # Bindings for normal mode
-config.bind('V', 'hint links spawn --detach mpv --force-window=immediate {hint-url}')
+config.bind(',v', 'hint links spawn --detach mpv --force-window=immediate {hint-url}')
 
 # Key remaps
 c.bindings.key_mappings = {'<Ctrl-c>': '<Escape>'}
@@ -62,8 +62,8 @@ c.colors.statusbar.normal.bg = xresources['*.background']
 c.colors.tabs.bar.bg = xresources['*.background']
 c.colors.tabs.odd.bg = xresources['*.background']
 c.colors.tabs.even.bg = xresources['*.background']
-c.colors.tabs.selected.odd.bg = xresources['*.color13']
-c.colors.tabs.selected.even.bg = xresources['*.color13']
+c.colors.tabs.selected.odd.bg = xresources['*.color8']
+c.colors.tabs.selected.even.bg = xresources['*.color8']
 
 
 # Which cookies to accept. With QtWebEngine, this setting also controls

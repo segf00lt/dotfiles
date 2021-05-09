@@ -1,0 +1,12 @@
+#!/bin/sh
+
+#arg=$1
+
+url=$QUTE_URL
+title=$QUTE_TITLE
+
+ytchannel='https://www.youtube.com/feeds/videos.xml?channel_id='
+
+# grep $url and look for https://www.youtube.com/channel/* and if found, strip
+# everything up to the last / and pass is into the variable ID.
+# then echo '$ytchannel$ID' >> ~/.config/newsboat/urls
