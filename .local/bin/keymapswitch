@@ -1,4 +1,4 @@
-#! /bin/sh
+#!/bin/sh
 
 map=`setxkbmap -query | grep 'layout' | tr -s ' ' | cut -d ' ' -f 2`
 

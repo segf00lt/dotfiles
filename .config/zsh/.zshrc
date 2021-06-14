@@ -1,7 +1,6 @@
-# The following lines were added by compinstall
 autoload -U colors && colors
 # Set prompt colors
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+PS1="%B%{$fg[red]%}[%{$fg[red]%}%n%{$fg[red]%}@%{$fg[red]%}%M %{$fg[white]%}%~%{$fg[red]%}]%{$fg[white]%}$%b "
 
 zstyle ':completion:*' completer _expand _complete _ignored
 zstyle ':completion:*' matcher-list ''
@@ -53,8 +52,13 @@ alias py='python3'
 alias nb='newsboat'
 alias ls='ls --color=auto'
 alias la='ls -la'
+alias cy='cal -y'
 
-export PATH="/home/joao/.local/bin:$PATH"
+alias paperdir='/home/joao/Documents/UFBA/FCH043/trabalho/'
+alias paper='paperdir && papercmd'
+alias code='/home/joao/Documents/projects/'
+
+export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
 alias config='/usr/bin/git --git-dir=/home/joao/dotfiles --work-tree=/home/joao'
 alias shutdown="shutdown now"
 export EDITOR="nvim"

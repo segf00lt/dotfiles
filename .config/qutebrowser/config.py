@@ -163,6 +163,8 @@ config.set('content.cookies.accept', 'all', 'https://drive.google.com/*')
 
 # Block cookies
 # Type: String
+config.set('content.cookies.accept', 'never', 'https://youtube.com/*')
+config.set('content.cookies.accept', 'never', 'https://icons8.com/upscaler')
 #config.set('content.cookies.accept', 'never')
 
 # Enable video and audio
