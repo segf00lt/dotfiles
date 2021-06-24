@@ -29,12 +29,13 @@ color listfocus_unread yellow default bold
 color info red black bold
 color article white default bold
 
-browser linkhandler
+browser "qutebrowser"
 macro , open-in-browser
 #macro t set browser "qndl" ; open-in-browser ; set browser linkhandler
-macro a set browser "tsp youtube-dl --add-metadata -xic -f bestaudio/best" ; open-in-browser ; set browser linkhandler
-macro v set browser "setsid -f mpv detatch=yes --no-terminal --force-window=immediate" ; open-in-browser ; set browser linkhandler
-#macro w set browser "lynx" ; open-in-browser ; set browser linkhandler
+macro a set browser "tsp youtube-dl --add-metadata -xic -f bestaudio/best" ; open-in-browser ; set browser "qutebrowser"
+macro v set browser "setsid -f mpv detatch=yes --no-terminal --force-window=immediate" ; open-in-browser ; set browser "qutebrowser"
+macro w set browser "qutebrowser -R --target window" ; open-in-browser ; set browser "qutebrowser"
+macro r set browser "webpdf %u" ; open-in-browser ; set browser "qutebrowser"
 #macro d set browser "dmenuhandler" ; open-in-browser ; set browser linkhandler
 #macro c set browser "echo %u | xclip -r -sel c" ; open-in-browser ; set browser linkhandler
 #macro C set browser "youtube-viewer --comments=%u" ; open-in-browser ; set browser linkhandler

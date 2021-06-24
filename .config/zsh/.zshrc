@@ -4,7 +4,6 @@ PS1="%B%{$fg[red]%}[%{$fg[red]%}%n%{$fg[red]%}@%{$fg[red]%}%M %{$fg[white]%}%~%{
 
 zstyle ':completion:*' completer _expand _complete _ignored
 zstyle ':completion:*' matcher-list ''
-zstyle :compinstall filename '/home/joao/.zshrc'
 
 autoload -Uz compinit
 zstyle ':completion:*' menu select
@@ -12,9 +11,9 @@ zmodload zsh/complist
 compinit
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
+HISTFILE=~/.cache/zsh/history
+HISTSIZE=10000000
+SAVEHIST=10000000
 setopt autocd extendedglob notify
 unsetopt beep
 bindkey -v
@@ -28,6 +27,10 @@ bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
+
+# edit commands in vim
+autoload edit-command-line; zle -N edit-command-line
+bindkey '^e' edit-command-line
 
 # Change cursor shape for different vi modes.
 function zle-keymap-select () {
@@ -63,6 +66,22 @@ alias config='/usr/bin/git --git-dir=/home/joao/dotfiles --work-tree=/home/joao'
 alias shutdown="shutdown now"
 export EDITOR="nvim"
 export VISUAL="nvim"
+export TERM="st"
+
+export GTK_THEME=Adwaita:dark
+
+# make terminal title dynamic
+case "$TERM" in (rxvt|rxvt-*|st|st-*|*xterm*|(dt|k|E)term)
+    local term_title () { print -n "\e]0;${(j: :q)@}\a" }
+    precmd () {
+      term_title "zsh"
+    }
+    preexec () {
+      local CMD="${(j:\n:)${(f)1}}"
+      term_title "$CMD"
+    }
+  ;;
+esac
 
 # Load syntax highlighting; should be last.
 source $HOME/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

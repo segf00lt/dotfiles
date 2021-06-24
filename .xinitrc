@@ -73,6 +73,9 @@ wal -R &
 #Redshift
 redshift &
 
+# Themes
+export QT_STYLE_OVERRIDE=adwaita
+
 #Loop
 while true; do
 	dwm >/dev/null 2>&1
