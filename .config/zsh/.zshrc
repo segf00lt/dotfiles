@@ -56,19 +56,36 @@ alias nb='newsboat'
 alias ls='ls --color=auto'
 alias la='ls -la'
 alias cy='cal -y'
+alias ffprobe='ffprobe -hide_banner'
+alias ffplay='ffplay -hide_banner'
+alias ffmpeg='ffmpeg -hide_banner'
+alias vi='nvim'
+alias tmux='tmux -2'
 
-alias paperdir='/home/joao/Documents/UFBA/FCH043/trabalho/'
-alias paper='paperdir && papercmd'
-alias code='/home/joao/Documents/projects/'
+export code='/home/joao/Documents/projects/'
 
 export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
 alias config='/usr/bin/git --git-dir=/home/joao/dotfiles --work-tree=/home/joao'
-alias shutdown="shutdown now"
 export EDITOR="nvim"
+export BROWSER="qutebrowser"
 export VISUAL="nvim"
 export TERM="st"
 
 export GTK_THEME=Adwaita:dark
+
+# Use lf to switch directories and bind it to ctrl-o
+lfcd () {
+    tmp="$(mktemp)"
+    lf -single -last-dir-path="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp" >/dev/null
+        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+    fi
+}
+bindkey -s '^o' 'lfcd\n'
+
+bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
 
 # make terminal title dynamic
 case "$TERM" in (rxvt|rxvt-*|st|st-*|*xterm*|(dt|k|E)term)

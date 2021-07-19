@@ -1,12 +1,10 @@
-! X colors.
-
 ! special
-*.foreground:   #dedede
+*.foreground:   #ebebeb
 *.background:   #000000
-*.cursorColor:  #dedede
+*.cursorColor:  #ebebeb
 
 ! black
-*.color0:       #2e3436
+*.color0:       #000000
 *.color8:       #555753
 
 ! red
@@ -26,8 +24,8 @@
 *.color12:      #729fcf
 
 ! magenta
-*.color5:       #75507b
-*.color13:      #ad7fa8
+*.color5:       #b85bc8
+*.color13:      #f6a2ed
 
 ! cyan
 *.color6:       #06989a
@@ -36,19 +34,3 @@
 ! white
 *.color7:       #d3d7cf
 *.color15:      #eeeeec
-
-! DWM colors
-
-dwm.normbordercolor: #555753
-dwm.normbgcolor: #000000
-dwm.normfgcolor: #d3d7cf
-dwm.selbordercolor: #cc0000
-dwm.selbgcolor: #555753
-dwm.selfgcolor: #fce94f
-
-! dmenu colors
-
-dmenu.background: #000000
-dmenu.foreground: #d3d7cf
-dmenu.selbackground: #555753
-dmenu.selforeground: #fce94f

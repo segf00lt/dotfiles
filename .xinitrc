@@ -67,14 +67,11 @@ picom &
 #nitrogen --restore &
 /home/joao/.fehbg &
 
-# Color Scheme
-wal -R &
-
 #Redshift
 redshift &
 
 # Themes
-export QT_STYLE_OVERRIDE=adwaita
+export QT_QPA_PLATFORMTHEME=qt5ct
 
 #Loop
 while true; do

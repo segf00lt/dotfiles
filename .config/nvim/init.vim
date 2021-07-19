@@ -1,4 +1,6 @@
 syntax on 
+set termguicolors
+set nocp
 set number relativenumber
 set hlsearch
 set incsearch
@@ -9,9 +11,23 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 filetype plugin on
-set omnifunc=syntaxcomplete#Complete
+au FileType html,xhtml setl ofu=htmlcomplete#CompleteTags
+au FileType py setl ofu=python3complete#Complete
+au FileType css setl ofu=csscomplete#CompleteCSS
+"au FileType php setl ofu=phpcomplete#CompletePHP
+"au FileType ruby,eruby setl ofu=rubycomplete#Complete
+"au FileType c setl ofu=ccomplete#CompleteCpp
 nnoremap tj  gt
 nnoremap tk  gT
+nnoremap tn :tabnew
+
+"Plugins
+call plug#begin()
+"Plug 'neovim/nvim-lspconfig'
+call plug#end()
+
+lua << EOF
+EOF
 
 "nnoremap th  :tabfirst<CR>
 "nnoremap tl  :tablast<CR>
@@ -22,4 +38,3 @@ nnoremap tk  gT
 " Alternatively use
 "nnoremap th :tabnext<CR>
 "nnoremap tl :tabprev<CR>
-"nnoremap tn :tabnew<CR>
