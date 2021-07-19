@@ -1,0 +1,6 @@
+#!/bin/sh
+
+IP=$1
+PORT='4747'
+
+env exclusive_caps=1 droidcam-cli -v $IP $PORT

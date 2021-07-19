@@ -1,0 +1,3 @@
+#!/bin/sh
+
+ffplay -hide_banner -noborder /dev/video0
