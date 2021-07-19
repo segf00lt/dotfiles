@@ -1,0 +1,39 @@
+# nvim: filetype=muttrc
+
+source "gpg -dq ~/.config/mutt/.passwd.gpg |"
+
+# ========== IMAP ==========
+set imap_user = "joaodear2007@gmail.com"
+set imap_pass = $my_pass
+set folder = "imaps://joaodear2007@gmail.com@imap.gmail.com:993"
+set spoolfile = "+INBOX"
+set use_from = "yes"
+set record="imaps://joaodear2007@gmail.com@imap.gmail.com/[Google Mail]/Sent Mail"
+set postponed="imaps://joaodear2007@gmail.com@imap.gmail.com/[Google Mail]/Drafts"
+set mbox="imaps://joaodear2007@gmail.com@imap.gmail.com/[Google Mail]/All Mail"
+set trash = "+imaps://joaodear2007@gmail.com@imap.gmail.com/[Google Mail]/Trash"
+set header_cache = "~/.cache/mutt/headers"
+set message_cachedir = "~/.cache/mutt/bodies"
+set certificate_file = "~/.config/mutt/certificates"
+set mail_check = 6
+set imap_keepalive = 300
+
+# ========== SMTP ==========
+set smtp_url = "smptp://joaodear2007@gmail.com@smtp.gmail.com:587"
+set smtp_pass = $my_pass
+
+mailboxes =INBOX ='Sent\ Mail' =Trash =Drafts
+
+# ========== Composition ==========
+set editor = "nvim"
+set edit_headers = yes
+set charset = UTF-8
+unset use_domain
+set realname = "Joao Dear"
+set from = "joaodear2007@gmail.com"
+set use_from = yes
+
+# ========== Appearance ===========
+set sidebar_visible = yes
+set sidebar_width = 20
+set sidebar_next_new_wrap = yes
