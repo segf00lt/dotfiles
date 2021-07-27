@@ -1,6 +1,8 @@
 syntax on 
+set background=dark
 set termguicolors
 set nocp
+"set number
 set number relativenumber
 set hlsearch
 set incsearch
@@ -11,6 +13,12 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 filetype plugin on
+" show existing tab with 4 spaces width
+"set tabstop=4
+" when indenting with '>', use 4 spaces width
+"set shiftwidth=4
+" On pressing tab, insert 4 spaces
+"set expandtab
 au FileType html,xhtml setl ofu=htmlcomplete#CompleteTags
 au FileType py setl ofu=python3complete#Complete
 au FileType css setl ofu=csscomplete#CompleteCSS
@@ -19,7 +27,7 @@ au FileType css setl ofu=csscomplete#CompleteCSS
 "au FileType c setl ofu=ccomplete#CompleteCpp
 nnoremap tj  gt
 nnoremap tk  gT
-nnoremap tn :tabnew
+nnoremap tn :tabnew 
 
 "Plugins
 call plug#begin()
