@@ -34,24 +34,24 @@ config.bind(',v', 'hint links spawn --detach mpv --force-window=immediate {hint-
 c.bindings.key_mappings = {'<Ctrl-c>': '<Escape>'}
 
 # Read colors from Xresources
-import subprocess
+#import subprocess
 
-def read_xresources(prefix):
-    props = {}
-    x = subprocess.run(['xrdb', '-query'], stdout=subprocess.PIPE)
-    lines = x.stdout.decode().split('\n')
-    for line in filter(lambda l : l.startswith(prefix), lines):
-        prop, _, value = line.partition(':\t')
-        props[prop] = value
-    return props
+#def read_xresources(prefix):
+#    props = {}
+#    x = subprocess.run(['xrdb', '-query'], stdout=subprocess.PIPE)
+#    lines = x.stdout.decode().split('\n')
+#    for line in filter(lambda l : l.startswith(prefix), lines):
+#        prop, _, value = line.partition(':\t')
+#        props[prop] = value
+#    return props
 
-xresources = read_xresources('*')
-c.colors.statusbar.normal.bg = xresources['*.background']
-c.colors.tabs.bar.bg = xresources['*.background']
-c.colors.tabs.odd.bg = xresources['*.background']
-c.colors.tabs.even.bg = xresources['*.background']
-c.colors.tabs.selected.odd.bg = xresources['*.color8']
-c.colors.tabs.selected.even.bg = xresources['*.color8']
+#xresources = read_xresources('*')
+c.colors.statusbar.normal.bg = "#000000" #xresources['*.background']
+c.colors.tabs.bar.bg = "#000000" #xresources['*.background']
+c.colors.tabs.odd.bg = "#000000" #xresources['*.background']
+c.colors.tabs.even.bg = "#000000" #xresources['*.background']
+c.colors.tabs.selected.odd.bg = "#555753" #xresources['*.color8']
+c.colors.tabs.selected.even.bg = "#555753" #xresources['*.color8']
 
 # Hide tabs when only one tab open
 #config.set("tabs.show", "multiple")
