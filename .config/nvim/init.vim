@@ -2,7 +2,6 @@ syntax on
 set background=dark
 set termguicolors
 set nocp
-"set number
 set number relativenumber
 set hlsearch
 set incsearch
@@ -28,14 +27,6 @@ au FileType css setl ofu=csscomplete#CompleteCSS
 nnoremap tj  gt
 nnoremap tk  gT
 nnoremap tn :tabnew 
-
-"Plugins
-call plug#begin()
-"Plug 'neovim/nvim-lspconfig'
-call plug#end()
-
-lua << EOF
-EOF
 
 "nnoremap th  :tabfirst<CR>
 "nnoremap tl  :tablast<CR>
