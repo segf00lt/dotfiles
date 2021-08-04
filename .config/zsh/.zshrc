@@ -1,6 +1,6 @@
 autoload -U colors && colors
 # Set prompt colors
-PS1="%B%{$fg[red]%}[%{$fg[red]%}%n%{$fg[red]%}@%{$fg[red]%}%M %{$fg[white]%}%~%{$fg[red]%}]%{$fg[white]%}$%b "
+PS1="%B%{$fg[green]%}%n%{$fg[green]%}@%{$fg[green]%}%M%{$fg[white]%}:%{$fg[blue]%}%~%B%{$fg[white]%}$%b "
 
 zstyle ':completion:*' completer _expand _complete _ignored
 zstyle ':completion:*' matcher-list ''
