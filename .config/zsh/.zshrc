@@ -61,6 +61,7 @@ alias ffplay='ffplay -hide_banner'
 alias ffmpeg='ffmpeg -hide_banner'
 alias vi='nvim'
 alias tmux='tmux -2'
+alias pactree='pactree -c'
 
 export code='/home/joao/Documents/projects/'
 
@@ -69,7 +70,7 @@ alias config='/usr/bin/git --git-dir=/home/joao/dotfiles --work-tree=/home/joao'
 export EDITOR="nvim"
 export BROWSER="qutebrowser"
 export VISUAL="nvim"
-export TERM="st"
+export TERM="xterm"
 
 export GTK_THEME=Adwaita:dark
 

@@ -19,6 +19,7 @@ config.load_autoconfig(False)
 config.set('content.cookies.accept', 'all', 'chrome-devtools://*')
 
 # Set dark mode
+config.set("colors.webpage.bg", "black")
 config.set("colors.webpage.preferred_color_scheme", "dark")
 config.set("colors.webpage.darkmode.enabled", True)
 config.set("colors.webpage.darkmode.algorithm", "brightness-rgb")
@@ -28,7 +29,7 @@ config.set("colors.webpage.darkmode.threshold.background", 215)
 config.set("colors.webpage.darkmode.policy.images", "smart")
 
 # Bindings for normal mode
-config.bind(',v', 'hint links spawn --detach mpv --force-window=immediate {hint-url}')
+config.bind(',v', 'hint links spawn --detach mpv --force-window=immediate "{hint-url}"')
 
 # Key remaps
 c.bindings.key_mappings = {'<Ctrl-c>': '<Escape>'}
@@ -50,8 +51,8 @@ c.colors.statusbar.normal.bg = "#000000" #xresources['*.background']
 c.colors.tabs.bar.bg = "#000000" #xresources['*.background']
 c.colors.tabs.odd.bg = "#000000" #xresources['*.background']
 c.colors.tabs.even.bg = "#000000" #xresources['*.background']
-c.colors.tabs.selected.odd.bg = "#555753" #xresources['*.color8']
-c.colors.tabs.selected.even.bg = "#555753" #xresources['*.color8']
+c.colors.tabs.selected.odd.bg = "#555555" #xresources['*.color8']
+c.colors.tabs.selected.even.bg = "#555555" #xresources['*.color8']
 
 # Hide tabs when only one tab open
 #config.set("tabs.show", "multiple")
