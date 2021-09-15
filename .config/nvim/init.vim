@@ -2,7 +2,8 @@ syntax on
 set background=dark
 set termguicolors
 set nocp
-set number relativenumber
+"set number relativenumber
+set number
 set hlsearch
 set incsearch
 set wildmode=longest,list,full
@@ -27,6 +28,17 @@ au FileType css setl ofu=csscomplete#CompleteCSS
 nnoremap tj  gt
 nnoremap tk  gT
 nnoremap tn :tabnew 
+nnoremap z. zz
+" make nn do esc
+inoremap zz <Esc>
+vnoremap zz <Esc>
+" make scrolls easier
+nnoremap E <C-e>
+nnoremap Y <C-y>
+nnoremap D <C-d>
+nnoremap U <C-u>
+nnoremap F <C-f>
+nnoremap B <C-b>
 
 "nnoremap th  :tabfirst<CR>
 "nnoremap tl  :tablast<CR>
