@@ -1,0 +1,15 @@
+#!/bin/sh
+
+while [ "$#" -gt 0 ]; do
+	case "$1" in
+		-d) dir="$2"; shift 2;;
+		-r) range="$2"; shift 2;;
+		*) echo "error: too many arguments" >&2 && exit 1 ;;
+		-*) echo "error: unkown option $1" >&2 && exit 1 ;;
+	esac
+done
+
+[[ -z $dir ]] && dir=$(pwd)
+[[ -z $range ]] && range='G'
+
+du -h $dir 2>/dev/null | grep "^[0-9]\+\(\.[0-9]\+\)\?$range" | sort -n -r

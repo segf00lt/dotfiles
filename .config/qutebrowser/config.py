@@ -33,6 +33,8 @@ config.bind(',v', 'hint links spawn --detach mpv --force-window=immediate "{hint
 
 # Key remaps
 c.bindings.key_mappings = {'<Ctrl-c>': '<Escape>'}
+c.bindings.key_mappings = {'<Ctrl-[>': '<Escape>'}
+c.bindings.key_mappings = {'<Alt-Space>': '<Escape>'}
 
 # Read colors from Xresources
 #import subprocess
