@@ -28,11 +28,10 @@ au FileType css setl ofu=csscomplete#CompleteCSS
 nnoremap tj  gt
 nnoremap tk  gT
 nnoremap tn :tabnew 
-" make zz do z.
-nnoremap z. zz
+nnoremap tJ :tabm +1<CR>
+nnoremap tK :tabm -1<CR>
 " make jj and zz do esc
 inoremap jj <Esc>
-inoremap zz <Esc>
 vnoremap zz <Esc>
 " make scrolls easier
 nnoremap E <C-e>
