@@ -62,6 +62,8 @@ alias ffmpeg='ffmpeg -hide_banner'
 alias vi='nvim'
 alias tmux='tmux -2'
 alias pactree='pactree -c'
+alias sc='mc -s'
+alias pc='mc -b'
 
 export code='/home/joao/Documents/projects/'
 
