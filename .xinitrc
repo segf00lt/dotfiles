@@ -56,6 +56,9 @@ picom &
 #Redshift
 redshift &
 
+# Hide mouse cursor after 3 seconds
+exec unclutter -idle 3 &
+
 # Themes
 export QT_QPA_PLATFORMTHEME=qt5ct
 
