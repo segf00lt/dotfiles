@@ -65,6 +65,9 @@ config.set('content.javascript.enabled', True, '*://start.duckduckgo.com/*')
 config.set('content.javascript.enabled', True, '*://duckduckgo.com/*')
 config.set('content.javascript.enabled', True, '*://github.com/*')
 config.set('content.javascript.enabled', True, '*://www.netflix.com/*')
+config.set('content.javascript.enabled', True, '*://wiki.archlinux.org/*')
+config.set('content.javascript.enabled', True, '*://archlinux.org/*')
+config.set('content.javascript.enabled', True, '*://aur.archlinux.org/*')
 
 # Block cookies
 # Type: String
@@ -76,6 +79,9 @@ config.set('content.cookies.accept', 'all', '*://start.duckduckgo.com/*')
 config.set('content.cookies.accept', 'all', '*://duckduckgo.com/*')
 config.set('content.cookies.accept', 'all', '*://github.com/*')
 config.set('content.cookies.accept', 'all', '*://www.netflix.com/*')
+config.set('content.cookies.accept', 'all', '*://wiki.archlinux.org/*')
+config.set('content.cookies.accept', 'all', '*://archlinux.org/*')
+config.set('content.cookies.accept', 'all', '*://aur.archlinux.org/*')
 
 # Enable video and audio
 # Type: BoolAsk

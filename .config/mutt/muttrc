@@ -1,28 +1,42 @@
 # nvim: filetype=muttrc
 
 source "gpg -dq ~/.config/mutt/.passwd.gpg |"
+source "gpg -dq ~/.config/mutt/secrets.gpg |"
+source mutt-wizard.muttrc
 
-# ========== IMAP ==========
 set imap_user = "joaodear2007@gmail.com"
 set imap_pass = $my_pass
+
+set imap_oauth_refresh_command = \
+    "~/.config/mutt/oauth2.py \
+    --quiet \
+    --user=$imap_user \
+    --client_id=$my_client_id \
+    --client_secret=$my_client_secret \
+    --refresh_token=$my_refresh_token"
+
+# ========== IMAP ==========
+set use_from = "yes"
+#set folder = "imap://joaodear2007@gmail.com@imap.gmail.com:993"
 set folder = "imaps://joaodear2007@gmail.com@imap.gmail.com:993"
 set spoolfile = "+INBOX"
-set use_from = "yes"
-set record="imaps://joaodear2007@gmail.com@imap.gmail.com/[Google Mail]/Sent Mail"
-set postponed="imaps://joaodear2007@gmail.com@imap.gmail.com/[Google Mail]/Drafts"
-set mbox="imaps://joaodear2007@gmail.com@imap.gmail.com/[Google Mail]/All Mail"
-set trash = "+imaps://joaodear2007@gmail.com@imap.gmail.com/[Google Mail]/Trash"
+#unset record
+#set record = "+[GMail]/Sent Mail"
+#set postponed = "+[Gmail]Drafts"
+set trash = "+Trash"
+#set mbox="imaps://joaodear2007@gmail.com@imap.gmail.com/[Google Mail]/All Mail"
 set header_cache = "~/.cache/mutt/headers"
 set message_cachedir = "~/.cache/mutt/bodies"
 set certificate_file = "~/.config/mutt/certificates"
-set mail_check = 6
+set mail_check = 600
 set imap_keepalive = 300
 
 # ========== SMTP ==========
 set smtp_url = "smptp://joaodear2007@gmail.com@smtp.gmail.com:587"
 set smtp_pass = $my_pass
 
-mailboxes =INBOX ='Sent\ Mail' =Trash =Drafts
+#mailboxes =INBOX =[Google\ mail]/Sent\ Mail =[Google\ mail]/Spam =[Google\ mail]/Trash
+mailboxes =INBOX =Trash
 
 # ========== Composition ==========
 set editor = "nvim"
@@ -37,3 +51,38 @@ set use_from = yes
 set sidebar_visible = yes
 set sidebar_width = 20
 set sidebar_next_new_wrap = yes
+
+# General rebindings
+bind index gg first-entry
+bind index j next-entry
+bind index k previous-entry
+bind attach <return> view-mailcap
+bind attach l view-mailcap
+bind editor <space> noop
+bind index G last-entry
+bind index gg first-entry
+bind pager,attach h exit
+bind pager j next-line
+bind pager k previous-line
+bind pager l view-attachments
+bind index D delete-message
+bind index U undelete-message
+bind index L limit
+bind index h noop
+bind index l display-message
+bind index,query <space> tag-entry
+macro browser h '<change-dir><kill-line>..<enter>' "Go to parent folder"
+bind index,pager H view-raw-message
+bind browser l select-entry
+bind pager,browser gg top-page
+bind pager,browser G bottom-page
+bind index,pager,browser d half-down
+bind index,pager,browser u half-up
+bind index,pager S sync-mailbox
+bind index,pager R group-reply
+bind index \031 previous-undeleted	# Mouse wheel
+bind index \005 next-undeleted		# Mouse wheel
+bind pager \031 previous-line		# Mouse wheel
+bind pager \005 next-line		# Mouse wheel
+bind editor <Tab> complete-query
+bind index ,m imap-fetch-mail
