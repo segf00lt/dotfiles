@@ -51,7 +51,8 @@ picom &
 
 #Wallpaper
 #nitrogen --restore &
-/home/joao/.fehbg &
+#/home/joao/.fehbg &
+xwallpaper --daemon --maximize $HOME/Pictures/bekinski2cropped.jpg
 
 #Redshift
 redshift &
