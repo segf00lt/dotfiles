@@ -68,7 +68,7 @@ alias pc='mc -b'
 export code='/home/joao/Documents/projects/'
 
 export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
-alias config='/usr/bin/git --git-dir=/home/joao/dotfiles --work-tree=/home/joao'
+alias config='/usr/bin/git --git-dir=/home/joao/.config/dotfiles --work-tree=$HOME'
 export EDITOR="nvim"
 export BROWSER="qutebrowser"
 export VISUAL="nvim"
