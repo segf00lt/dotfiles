@@ -42,6 +42,7 @@ setxkbmap us &
 
 #Disable screensaver
 xset s off && xset -dpms
+xset r rate 300 35
 
 #Display Res
 #xrandr --output Virtual-1 --mode 1360x768 &
@@ -50,8 +51,6 @@ xset s off && xset -dpms
 picom &
 
 #Wallpaper
-#nitrogen --restore &
-#/home/joao/.fehbg &
 xwallpaper --daemon --maximize $HOME/Pictures/bekinski2cropped.jpg
 
 #Redshift

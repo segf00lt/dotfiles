@@ -2,7 +2,6 @@ syntax on
 set background=dark
 set termguicolors
 set nocp
-"set number relativenumber
 set number
 set hlsearch
 set incsearch
@@ -35,13 +34,8 @@ nnoremap tK :tabm -1<CR>
 inoremap jj <Esc>
 vnoremap zz <Esc>
 " make scrolls easier
-nnoremap E <C-e>
-nnoremap Y <C-y>
-nnoremap D <C-d>
-nmap U <Nop>
-nnoremap U <C-u>
-nnoremap F <C-f>
-nnoremap B <C-b>
+" TODO: would be cool to have a scroll mode to make it easier
+" to scroll around pages
 
 "nnoremap th  :tabfirst<CR>
 "nnoremap tl  :tablast<CR>
