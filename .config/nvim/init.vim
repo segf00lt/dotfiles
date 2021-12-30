@@ -13,12 +13,6 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 nnoremap <Tab><Tab> :noh<CR>
 filetype plugin on
-" show existing tab with 4 spaces width
-"set tabstop=4
-" when indenting with '>', use 4 spaces width
-"set shiftwidth=4
-" On pressing tab, insert 4 spaces
-"set expandtab
 au FileType html,xhtml setl ofu=htmlcomplete#CompleteTags
 au FileType py setl ofu=python3complete#Complete
 au FileType css setl ofu=csscomplete#CompleteCSS
@@ -30,19 +24,9 @@ nnoremap tk  gT
 nnoremap tn :tabnew 
 nnoremap tJ :tabm +1<CR>
 nnoremap tK :tabm -1<CR>
-" make jj and zz do esc
+
+" make jj do esc
 inoremap jj <Esc>
-vnoremap zz <Esc>
-" make scrolls easier
+
 " TODO: would be cool to have a scroll mode to make it easier
 " to scroll around pages
-
-"nnoremap th  :tabfirst<CR>
-"nnoremap tl  :tablast<CR>
-"nnoremap tt  :tabedit<Space>
-"nnoremap tn  :tabnext<Space>
-"nnoremap tm  :tabm<Space>
-"nnoremap td  :tabclose<CR>
-" Alternatively use
-"nnoremap th :tabnext<CR>
-"nnoremap tl :tabprev<CR>
