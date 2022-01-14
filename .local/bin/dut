@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# simple way to get size of directory or file
+
+{ du -c --si $@ | tail -n 1; } 2>/dev/null
