@@ -1,9 +1,0 @@
-#!/bin/sh
-
-PAPER='/home/joao/Documents/UFBA/FCH043/trabalho'
-PWD=$(pwd)
-if [ $PAPER != $PWD ] ;
-then echo "cd into paper" && exit 1 ;
-fi
-zathura '/home/joao/Documents/UFBA/FCH043/trabalho/trabalho.pdf' &
-nvim 'trabalho.tex' ;
