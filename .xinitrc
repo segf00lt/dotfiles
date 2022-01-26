@@ -51,7 +51,7 @@ xset r rate 300 35
 picom &
 
 #Wallpaper
-xwallpaper --daemon --maximize $HOME/Pictures/bekinski2cropped.jpg
+xwallpaper --daemon --maximize /home/joao/Pictures/mountains.jpg
 
 #Redshift
 redshift &
