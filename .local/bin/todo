@@ -1,9 +1,0 @@
-#!/bin/sh
-
-tl='/home/joao/Documents/TODO'
-
-case $1 in
-	high) head -n 5 $tl ;;
-	low) tail -n "+7" $tl ;;
-	*) cat $tl ;;
-esac
