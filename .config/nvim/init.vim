@@ -15,7 +15,7 @@ filetype plugin on
 au FileType html,xhtml setl ofu=htmlcomplete#CompleteTags
 au FileType py setl ofu=python3complete#Complete
 au FileType css setl ofu=csscomplete#CompleteCSS
-au FileType md set spell
+au BufRead,BufNewFile *.md setl spell
 "au FileType c setl ofu=ccomplete#CompleteCpp
 nnoremap tj  gt
 nnoremap tk  gT

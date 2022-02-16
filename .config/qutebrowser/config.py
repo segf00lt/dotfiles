@@ -17,6 +17,22 @@ config.set("colors.webpage.darkmode.policy.images", "smart")
 config.bind(',v', 'hint links spawn --detach mpv --force-window=immediate "{hint-url}"')
 config.bind(',a', 'hint links spawn --detach mpv --force-window=immediate --no-video "{hint-url}"')
 
+# Set fonts
+monospace = "10pt 'Noto Sans Mono'"
+c.fonts.hints = f"bold {monospace}"
+c.fonts.completion.category = f"bold {monospace}"
+c.fonts.completion.entry = monospace
+c.fonts.debug_console = monospace
+c.fonts.downloads = monospace
+c.fonts.keyhint = monospace
+c.fonts.messages.error = monospace
+c.fonts.messages.info = monospace
+c.fonts.messages.warning = monospace
+c.fonts.prompts = monospace
+c.fonts.statusbar = monospace
+c.fonts.tabs.selected = monospace
+c.fonts.tabs.unselected = monospace
+
 # Key remaps
 c.bindings.key_mappings = {'<Ctrl-c>': '<Escape>'}
 c.bindings.key_mappings = {'<Ctrl-[>': '<Escape>'}
