@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# Easy screencasting with ffmpeg
+
+# TODO:
+# 1. fix this message
+# [aac @ 0x55c4683cac00] Queue input is backward in time
+# [mp4 @ 0x55c4683c93c0] Non-monotonous DTS in output stream 0:1; previous: 281211, current: 280326; changing to 281212. This may result in incorrect timestamps in the output file.
+# 2. Add external audio input
+
+# sources
+screencast="-f x11grab -thread_queue_size 1024 -i :0.0"
+webcam="-f v4l2 -thread_queue_size 1024 -i /dev/video0"
+intaudio="-f pulse -ac 2 -i alsa_output.pci-0000_00_1f.3.hdmi-stereo.monitor -acodec aac"
+extaudio=""
+
+# scale webcam and overlay on screencast
+filter="-filter_complex [1]scale=iw/1.5:-1[cam];[0][cam]overlay=main_w-overlay_w:main_h-overlay_h"
+
+clean="-y -nostdin -hide_banner"
+misc="-use_wallclock_as_timestamps 1 -framerate 60"
+
+ffmpeg $clean $screencast $webcam $intaudio $filter $misc "$1"
