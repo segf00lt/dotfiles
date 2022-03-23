@@ -64,7 +64,8 @@ alias tmux='tmux -2'
 alias pactree='pactree -c'
 alias sc='mc -s'
 alias pc='mc -b'
-alias gcc='gcc -Wpedantic'
+alias gcc='gcc  -Wall -Wpedantic'
+alias lynx='lynx -vikeys'
 
 export code='/home/joao/Documents/projects/'
 
@@ -90,19 +91,6 @@ lfcd () {
 bindkey -s '^o' 'lfcd\n'
 
 bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
-
-# make terminal title dynamic
-case "$TERM" in (rxvt|rxvt-*|st|st-*|*xterm*|(dt|k|E)term)
-    local term_title () { print -n "\e]0;${(j: :q)@}\a" }
-    precmd () {
-      term_title "zsh"
-    }
-    preexec () {
-      local CMD="${(j:\n:)${(f)1}}"
-      term_title "$CMD"
-    }
-  ;;
-esac
 
 # Load syntax highlighting; should be last.
 source $HOME/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

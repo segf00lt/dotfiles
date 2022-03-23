@@ -3,4 +3,4 @@
 IP=$1
 PORT='4747'
 
-env exclusive_caps=1 droidcam-cli -v $IP $PORT
+env exclusive_caps=1 droidcam-cli -nocontrols -v $IP $PORT

@@ -3,9 +3,11 @@ config.load_autoconfig(False)
 
 config.set('content.cookies.accept', 'all', 'chrome-devtools://*')
 
+c.url.start_pages = "https://start.duckduckgo.com"
+
 # Set dark mode
-config.set("colors.webpage.bg", "black")
 config.set("colors.webpage.preferred_color_scheme", "dark")
+config.set("colors.webpage.bg", "black")
 config.set("colors.webpage.darkmode.enabled", True)
 config.set("colors.webpage.darkmode.algorithm", "brightness-rgb")
 config.set("colors.webpage.darkmode.contrast", 1.0)
@@ -18,17 +20,18 @@ config.bind(',v', 'hint links spawn --detach mpv --force-window=immediate "{hint
 config.bind(',a', 'hint links spawn --detach mpv --force-window=immediate --no-video "{hint-url}"')
 
 # Set fonts
+regular = "10pt 'Noto Sans'"
 monospace = "10pt 'Noto Sans Mono'"
 c.fonts.hints = f"bold {monospace}"
 c.fonts.completion.category = f"bold {monospace}"
 c.fonts.completion.entry = monospace
 c.fonts.debug_console = monospace
-c.fonts.downloads = monospace
+c.fonts.downloads = regular
 c.fonts.keyhint = monospace
 c.fonts.messages.error = monospace
 c.fonts.messages.info = monospace
 c.fonts.messages.warning = monospace
-c.fonts.prompts = monospace
+c.fonts.prompts = regular
 c.fonts.statusbar = monospace
 c.fonts.tabs.selected = monospace
 c.fonts.tabs.unselected = monospace
