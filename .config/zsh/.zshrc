@@ -64,7 +64,6 @@ alias tmux='tmux -2'
 alias pactree='pactree -c'
 alias sc='mc -s'
 alias pc='mc -b'
-alias gcc='gcc  -Wall -Wpedantic'
 alias lynx='lynx -vikeys'
 
 export code='/home/joao/Documents/projects/'
