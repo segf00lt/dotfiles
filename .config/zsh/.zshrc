@@ -89,7 +89,5 @@ lfcd () {
 }
 bindkey -s '^o' 'lfcd\n'
 
-bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
-
 # Load syntax highlighting; should be last.
 source $HOME/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
