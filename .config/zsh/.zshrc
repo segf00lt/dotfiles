@@ -27,10 +27,9 @@ bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
-preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
+precmd() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 # Useful aliases and other stuff
-alias cl='clear'
 alias py='python3'
 alias nb='newsboat'
 alias ls='ls --color=auto'
@@ -45,13 +44,13 @@ alias pactree='pactree -c'
 alias sc='mc -s'
 alias pc='mc -b'
 alias lynx='lynx -vikeys'
-export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
 alias config='/usr/bin/git --git-dir=/home/joao/.config/dotfiles --work-tree=$HOME'
+
+export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="qutebrowser"
 export TERM="xterm"
-
 export GTK_THEME=Adwaita:dark
 
 # Use lf to switch directories and bind it to ctrl-o
