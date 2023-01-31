@@ -87,6 +87,7 @@ config.set('content.javascript.enabled', True, '*://www.netflix.com/*')
 config.set('content.javascript.enabled', True, '*://wiki.archlinux.org/*')
 config.set('content.javascript.enabled', True, '*://archlinux.org/*')
 config.set('content.javascript.enabled', True, '*://aur.archlinux.org/*')
+config.set('content.javascript.enabled', True, '*://stackoverflow.com/*')
 
 # Block cookies
 # Type: String
