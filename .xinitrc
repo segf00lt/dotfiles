@@ -42,7 +42,6 @@ setxkbmap us &
 
 #Disable screensaver
 xset s off && xset -dpms
-xset r rate 300 35
 
 #Display Res
 #xrandr --output Virtual-1 --mode 1360x768 &
@@ -54,7 +53,7 @@ picom &
 xwallpaper --daemon --maximize /home/joao/Pictures/black.jpg
 
 #Redshift
-redshift &
+#redshift &
 
 # Hide mouse cursor after 3 seconds
 exec unclutter -idle 3 &

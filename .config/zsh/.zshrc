@@ -44,14 +44,18 @@ alias pactree='pactree -c'
 alias sc='mc -s'
 alias pc='mc -b'
 alias lynx='lynx -vikeys'
+alias mpv='mpv --force-window=immediate'
 alias config='/usr/bin/git --git-dir=/home/joao/.config/dotfiles --work-tree=$HOME'
+alias grep='grep --color'
 
 export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
+export PATH="$PATH:${$(find ~/.local/share/go/bin -type d -printf %p:)%%:}"
 export EDITOR="nvim"
 export VISUAL="nvim"
-export BROWSER="qutebrowser"
+export BROWSER="brave"
 export TERM="xterm"
 export GTK_THEME=Adwaita:dark
+export OCL_ICD_FILENAMES="libintelocl_emu.so:libalteracl.so:/opt/intel/inteloneapi/compiler/latest/linux/lib/x64/libintelocl.so"
 
 # Use lf to switch directories and bind it to ctrl-o
 lfcd () {
@@ -67,3 +71,6 @@ bindkey -s '^o' 'lfcd\n'
 
 # Load syntax highlighting; should be last.
 source $HOME/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+. /opt/asdf-vm/asdf.sh
+

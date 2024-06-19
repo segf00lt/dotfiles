@@ -1,3 +1,4 @@
+colorscheme vim
 syntax on 
 set background=dark
 set termguicolors
@@ -6,6 +7,11 @@ set hlsearch
 set incsearch
 set wildmode=longest,list,full
 set autoindent
+set autoread
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set path+=/usr/local/include
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
@@ -41,3 +47,4 @@ inoremap jj <Esc>
 
 " TODO: would be cool to have a scroll mode to make it easier
 " to scroll around pages
+"
