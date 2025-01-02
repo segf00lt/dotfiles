@@ -50,6 +50,7 @@ alias grep='grep --color'
 
 export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
 export PATH="$PATH:${$(find ~/.local/share/go/bin -type d -printf %p:)%%:}"
+export PATH="$PATH:${$(find ~/cosmocc/bin -type d -printf %p:)%%:}"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="brave"
@@ -71,6 +72,4 @@ bindkey -s '^o' 'lfcd\n'
 
 # Load syntax highlighting; should be last.
 source $HOME/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-. /opt/asdf-vm/asdf.sh
 
