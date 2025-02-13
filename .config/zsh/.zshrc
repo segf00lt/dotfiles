@@ -50,7 +50,7 @@ alias grep='grep --color'
 
 export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
 export PATH="$PATH:${$(find ~/.local/share/go/bin -type d -printf %p:)%%:}"
-export PATH="$PATH:${$(find ~/cosmocc/bin -type d -printf %p:)%%:}"
+#export PATH="$PATH:${$(find ~/cosmocc/bin -type d -printf %p:)%%:}"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="brave"

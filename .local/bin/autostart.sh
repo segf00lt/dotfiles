@@ -1,4 +1,4 @@
 #! /bin/sh
 
-#exec slstatus &
 exec dwmblocks &
+xset r rate 175 55
