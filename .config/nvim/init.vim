@@ -10,7 +10,7 @@ set incsearch
 set wildmode=longest,list,full
 set autoindent
 set autoread
-"set autochdir
+set noautochdir
 set expandtab
 set tabstop=4
 set shiftwidth=4
@@ -32,7 +32,7 @@ au FileType c setl ofu=ccomplete#Complete
 au BufRead,BufNewFile *.md setl spell
 au BufWritePre * syntax sync fromstart
 
-let g:netrw_keepdir=0
+"let g:netrw_keepdir=0
 "let g:netrw_banner=0
 "let g:netrw_liststyle=3
 
