@@ -1,8 +1,10 @@
 colorscheme vim
 set loadplugins
 syntax on 
+set shada="NONE"
 set completeopt-=preview
 set background=dark
+set linebreak
 set termguicolors
 set nonumber
 set hlsearch
@@ -12,8 +14,8 @@ set autoindent
 set autoread
 set noautochdir
 set expandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set path+=/usr/local/include
 set path+=/usr/include
 "set list
