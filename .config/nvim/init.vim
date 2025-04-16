@@ -39,6 +39,7 @@ au BufWritePre * syntax sync fromstart
 "let g:netrw_liststyle=3
 
 "autocmd Filetype go set makeprg=go\ build
+autocmd Filetype c set makeprg=./nob
 
 let mapleader = "`"
 nnoremap <leader>h :noh<CR>
