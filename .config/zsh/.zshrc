@@ -73,3 +73,9 @@ bindkey -s '^o' 'lfcd\n'
 # Load syntax highlighting; should be last.
 source $HOME/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+
+PATH="/home/joao/Documents/projects/emsdk:/home/joao/Documents/projects/emsdk/upstream/emscripten:$PATH"
+export EMSDK="/home/joao/Documents/projects/emsdk"
+export EMSDK_NODE="/home/joao/Documents/projects/emsdk/node/20.18.0_64bit/bin/node"
+
+alias init_nvm="source /usr/share/nvm/init-nvm.sh"
