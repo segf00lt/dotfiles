@@ -6,6 +6,7 @@ set clipboard+=unnamedplus
 set completeopt-=preview
 set background=dark
 set linebreak
+"set notermguicolors
 set termguicolors
 set nonumber
 set hlsearch
@@ -50,11 +51,15 @@ nnoremap <leader>e :e<Space>
 nnoremap <leader>b :b<Space>
 nnoremap <leader>l :ls<CR>
 nnoremap <leader>m :wa<CR>:make<CR>
-nnoremap <leader>o  gt
-nnoremap <leader>i  gT
+nnoremap <leader>o :only<CR>
+nnoremap <leader>s :split<CR>
+nnoremap <leader>v :vsplit<CR>
+nnoremap <leader>c :close<CR>
+nnoremap <leader>]  gt
+nnoremap <leader>[  gT
 nnoremap <leader>n :tabnew 
-nnoremap <leader>O :tabm +1<CR>
-nnoremap <leader>I :tabm -1<CR>
+nnoremap <leader>} :tabm +1<CR>
+nnoremap <leader>{ :tabm -1<CR>
 
 let mapleader = "\\"
 nnoremap <leader>h :noh<CR>
@@ -64,11 +69,15 @@ nnoremap <leader>e :e<Space>
 nnoremap <leader>b :b<Space>
 nnoremap <leader>l :ls<CR>
 nnoremap <leader>m :wa<CR>:make<CR>
-nnoremap <leader>o  gt
-nnoremap <leader>i  gT
+nnoremap <leader>o :only<CR>
+nnoremap <leader>s :split<CR>
+nnoremap <leader>v :vsplit<CR>
+nnoremap <leader>c :close<CR>
+nnoremap <leader>]  gt
+nnoremap <leader>[  gT
 nnoremap <leader>n :tabnew 
-nnoremap <leader>O :tabm +1<CR>
-nnoremap <leader>I :tabm -1<CR>
+nnoremap <leader>} :tabm +1<CR>
+nnoremap <leader>{ :tabm -1<CR>
 
 let mapleader = ","
 nnoremap <leader>h :noh<CR>
@@ -78,11 +87,15 @@ nnoremap <leader>e :e<Space>
 nnoremap <leader>b :b<Space>
 nnoremap <leader>l :ls<CR>
 nnoremap <leader>m :wa<CR>:make<CR>
-nnoremap <leader>o  gt
-nnoremap <leader>i  gT
+nnoremap <leader>o :only<CR>
+nnoremap <leader>s :split<CR>
+nnoremap <leader>v :vsplit<CR>
+nnoremap <leader>c :close<CR>
+nnoremap <leader>]  gt
+nnoremap <leader>[  gT
 nnoremap <leader>n :tabnew 
-nnoremap <leader>O :tabm +1<CR>
-nnoremap <leader>I :tabm -1<CR>
+nnoremap <leader>} :tabm +1<CR>
+nnoremap <leader>{ :tabm -1<CR>
 
 
 inoremap jj <Esc>
@@ -96,15 +109,6 @@ function! SourceFileIfExists(filepath) abort
     catch
     endtry
 endfunction
-
-call SourceFileIfExists(".project.vim")
-
-autocmd DirChanged * call SourceFileIfExists(".project.vim")
-
-nnoremap <S-F11> :call SourceFileIfExists(".project.vim")<CR>
-nnoremap <S-F12> :call SourceFileIfExists(".project.vim")<CR>:call SourceFileIfExists(".save.vim")<CR>
-nnoremap <S-F2> :wa<CR>:mksession! .save.vim<CR>
-
 
 "------------------------------------------------------------------------
 " Global scratch‐buffer + jobstart() integration
@@ -190,13 +194,37 @@ endfunction
 
 nnoremap <F1> :call ToggleScratch()<CR>
 
+"function! MakeAndDismiss() abort
+"  make
+"  let qfl = getqflist()
+"  let errs = filter(qfl, 'has_key(v:val, "type") && v:val.type ==# "E"')
+"  if empty(errs)
+"    call feedkeys(" ")
+"  endif
+"endfunction
+
+nnoremap <S-F11> :call SourceFileIfExists(".project.vim")<CR>
+nnoremap <S-F12> :call SourceFileIfExists(".project.vim")<CR>:call SourceFileIfExists(".save.vim")<CR>
+nnoremap <S-F2> :wa<CR>:mksession! .save.vim<CR>
+
 " if we are using neovide as our gui client
-let neovide_scale_factor = 1.0
-let neovide_position_animation_length = 0
-let neovide_cursor_animation_length = 0.0
-let neovide_cursor_trail_size = 0
-let neovide_cursor_animate_in_insert_mode = 0
-let neovide_cursor_animate_command_line = 0
-let neovide_scroll_animation_far_lines = 0
-let neovide_scroll_animation_length = 0.0
+if exists("g:neovide") && neovide == v:true
+  colorscheme torte
+
+  autocmd BufDelete * if len(filter(range(1, bufnr('$')), 'buflisted(v:val)')) == 0 | enew | endif
+
+  call SourceFileIfExists(".project.vim")
+  call SourceFileIfExists(".save.vim")
+
+  let neovide_scale_factor = 1.0
+  let neovide_position_animation_length = 0
+  let neovide_cursor_animation_length = 0.0
+  let neovide_cursor_trail_size = 0
+  let neovide_cursor_animate_in_insert_mode = 0
+  let neovide_cursor_animate_command_line = 0
+  let neovide_scroll_animation_far_lines = 0
+  let neovide_scroll_animation_length = 0.0
+endif
+
+
 
