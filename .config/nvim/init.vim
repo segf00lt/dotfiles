@@ -209,6 +209,8 @@ nnoremap <S-F2> :wa<CR>:mksession! .save.vim<CR>
 
 " if we are using neovide as our gui client
 if exists("g:neovide") && neovide == v:true
+  set title
+
   colorscheme torte
 
   autocmd BufDelete * if len(filter(range(1, bufnr('$')), 'buflisted(v:val)')) == 0 | enew | endif
