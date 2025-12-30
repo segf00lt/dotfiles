@@ -18,6 +18,7 @@ set noautochdir
 set expandtab
 set tabstop=2
 set shiftwidth=2
+set tags=./tags;/
 set path+=/usr/local/include
 set path+=/usr/include
 "set list
@@ -36,6 +37,17 @@ au FileType c setl ofu=ccomplete#Complete
 au BufRead,BufNewFile *.md setl spell
 au BufWritePre * syntax sync fromstart
 
+autocmd FileType c syntax clear cErrInParen
+autocmd FileType c syntax clear cParenError
+autocmd FileType c syntax keyword cType proc
+autocmd FileType c syntax keyword cType func
+autocmd FileType cpp syntax clear cErrInParen
+autocmd FileType cpp syntax clear cParenError
+autocmd FileType cpp syntax keyword cppType proc
+autocmd FileType cpp syntax keyword cppType func
+"autocmd FileType c syntax clear cBracketError
+"autocmd FileType c syntax clear cErrInBracket
+
 "let g:netrw_keepdir=0
 "let g:netrw_banner=0
 "let g:netrw_liststyle=3
@@ -51,15 +63,15 @@ nnoremap <leader>e :e<Space>
 nnoremap <leader>b :b<Space>
 nnoremap <leader>l :ls<CR>
 nnoremap <leader>m :wa<CR>:make<CR>
-nnoremap <leader>o :only<CR>
+nnoremap <leader>[ :only<CR>
 nnoremap <leader>s :split<CR>
-nnoremap <leader>v :vsplit<CR>
+nnoremap <leader>v :vsplit<CR>:wincmd l<CR>
 nnoremap <leader>c :close<CR>
-nnoremap <leader>]  gt
-nnoremap <leader>[  gT
+nnoremap <leader>o  gt
+nnoremap <leader>i  gT
 nnoremap <leader>n :tabnew 
-nnoremap <leader>} :tabm +1<CR>
-nnoremap <leader>{ :tabm -1<CR>
+nnoremap <leader>O :tabm +1<CR>
+nnoremap <leader>I :tabm -1<CR>
 
 let mapleader = "\\"
 nnoremap <leader>h :noh<CR>
@@ -69,15 +81,15 @@ nnoremap <leader>e :e<Space>
 nnoremap <leader>b :b<Space>
 nnoremap <leader>l :ls<CR>
 nnoremap <leader>m :wa<CR>:make<CR>
-nnoremap <leader>o :only<CR>
+nnoremap <leader>[ :only<CR>
 nnoremap <leader>s :split<CR>
-nnoremap <leader>v :vsplit<CR>
+nnoremap <leader>v :vsplit<CR>:wincmd l<CR>
 nnoremap <leader>c :close<CR>
-nnoremap <leader>]  gt
-nnoremap <leader>[  gT
+nnoremap <leader>o  gt
+nnoremap <leader>i  gT
 nnoremap <leader>n :tabnew 
-nnoremap <leader>} :tabm +1<CR>
-nnoremap <leader>{ :tabm -1<CR>
+nnoremap <leader>O :tabm +1<CR>
+nnoremap <leader>I :tabm -1<CR>
 
 let mapleader = ","
 nnoremap <leader>h :noh<CR>
@@ -87,16 +99,33 @@ nnoremap <leader>e :e<Space>
 nnoremap <leader>b :b<Space>
 nnoremap <leader>l :ls<CR>
 nnoremap <leader>m :wa<CR>:make<CR>
-nnoremap <leader>o :only<CR>
+nnoremap <leader>[ :only<CR>
 nnoremap <leader>s :split<CR>
-nnoremap <leader>v :vsplit<CR>
+nnoremap <leader>v :vsplit<CR>:wincmd l<CR>
 nnoremap <leader>c :close<CR>
-nnoremap <leader>]  gt
-nnoremap <leader>[  gT
+nnoremap <leader>o  gt
+nnoremap <leader>i  gT
 nnoremap <leader>n :tabnew 
-nnoremap <leader>} :tabm +1<CR>
-nnoremap <leader>{ :tabm -1<CR>
+nnoremap <leader>O :tabm +1<CR>
+nnoremap <leader>I :tabm -1<CR>
 
+let mapleader = "§"
+nnoremap <leader>h :noh<CR>
+nnoremap <leader>f :Ex<CR>
+nnoremap <leader>F :tabnew .<CR>
+nnoremap <leader>e :e<Space>
+nnoremap <leader>b :b<Space>
+nnoremap <leader>l :ls<CR>
+nnoremap <leader>m :wa<CR>:make<CR>
+nnoremap <leader>[ :only<CR>
+nnoremap <leader>s :split<CR>
+nnoremap <leader>v :vsplit<CR>:wincmd l<CR>
+nnoremap <leader>c :close<CR>
+nnoremap <leader>o  gt
+nnoremap <leader>i  gT
+nnoremap <leader>n :tabnew 
+nnoremap <leader>O :tabm +1<CR>
+nnoremap <leader>I :tabm -1<CR>
 
 inoremap jj <Esc>
 tnoremap jj <C-\><C-N>

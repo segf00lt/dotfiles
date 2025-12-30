@@ -61,6 +61,8 @@ exec unclutter -idle 3 &
 # Themes
 export QT_QPA_PLATFORMTHEME=qt5ct
 
+export _JAVA_OPTIONS="-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
+
 #Loop
 while true; do
 	dwm >/dev/null 2>&1
